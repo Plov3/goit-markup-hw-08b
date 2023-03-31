@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/modern-normalize.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!--заголовок-->
+  <header class="main-header">
+    <div class="main-header__container container">
+      <nav class="navigation">
+        <a href="index.html" class="logo logo__top link">Web<span class="logo__half-top">Studio</span></a>
+        <ul class="navigation-pages navigation__top list">
+          <li class="navigation-pages__item">
+            <a href="index.html" class="navigation-pages__link link">Студия</a>
+          </li>
+          <li class="navigation-pages__item">
+            <a href="portfolio.html" class="navigation-pages__link link navigation-pages__current">Портфолио</a>
+          </li>
+          <li class="navigation-pages__item">
+            <a href="#3" class="navigation-pages__link link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contacts list">
+        <li class="contacts__item">
+          <a href="mailto:info@devstudio.com" class="contacts__link mail link"><svg class="contacts__icon" width="16px"
+              height="12px">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="contacts__item">
+          <a href="tel:+380961111111" class="contacts__link tel link"><svg class="contacts__icon" width="10px"
+              height="16px">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+      <button class="mobile-menu-btn__open" type="button" data-menu-open>
+        <svg class="mobile-menu-btn__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu__wrap">
+          <ul class="mobile-menu__navigation list">
+            <li class="mobile-menu__navigation-item">
+              <a class="mobile-menu__navigation-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__navigation-item">
+              <a class="mobile-menu__navigation-link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__navigation-item">
+              <a class="mobile-menu__navigation-link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="mobile-menu__bot-wrap">
+            <ul class="mobile-menu__contact-list list">
+              <li class="mobile-menu__contact-item">
+                <a class="mobile-menu__contact-link-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu__contact-item">
+                <a class="mobile-menu__contact-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__socials list">
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- основная часть -->
+  <main>
+    <!-- герой -->
+    <section class="portfolio section">
+      <div class="container">
+        <h1 class="portfolio__header visually-hidden">Portfolio</h1>
+        <!-- фильтр -->
+        <ul class="portfolio__filter-list list">
+          <li class="portfolio__filter-item">
+            <button class="portfolio__filter-btn" type="button">Все</button>
+          </li>
+          <li class="portfolio__filter-item">
+            <button class="portfolio__filter-btn" type="button">Веб-сайты</button>
+          </li>
+          <li class="portfolio__filter-item">
+            <button class="portfolio__filter-btn" type="button">Приложения</button>
+          </li>
+          <li class="portfolio__filter-item">
+            <button class="portfolio__filter-btn" type="button">Дизайн</button>
+          </li>
+          <li class="portfolio__filter-item">
+            <button class="portfolio__filter-btn" type="button">Маркетинг</button>
+          </li>
+        </ul>
+        <!-- список проектов -->
+        <ul class="portfolio__examples-list container list">
+          <li class="portfolio__example">
+            <a class="link portfolio__link" href="">
+              <div class="portfolio__example-overlay-wrap">
+                <picture>
+                  <source srcset="
+                        ./images/portfolio/technocrack-desktop.jpg 1x,
+                        ./images/portfolio/technocrack-desktop@2.jpg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/portfolio/technocrack-tablet.jpg 1x,
+                        ./images/portfolio/technocrack-tablet@2.jpg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/portfolio/technocrack-mobile.jpg 1x,
+                        ./images/portfolio/technocrack-mobile@2.jpg 2x
+                      " media="(min-width: 480px)" />
+                  <img src="./images/portfolio/technocrack-desktop.jpg" alt="Веб-сайт компании Технокряк" width="370"
+                    height="294" class="portfolio__img" />
+                </picture>
+
+                <div class="portfolio__example-overlay is-hidden">
+                  <p class="portfolio__example-overlay-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                    компании или частном лице.
+                  </p>
+                </div>
+              </div>
+
+              <div class="portfolio__example-text">
+                <h3 class="portfolio__example-name section-header">Технокряк</h3>
+                <p class="portfolio__example-description section-description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__example">
+            <a class="link portfolio__link" href="">
+              <div class="portfolio__example-overlay-wrap">
+                <picture>
+                  <source srcset="
+                      ./images/portfolio/new_orlean-desktop.jpg 1x,
+                      ./images/portfolio/new_orlean-desktop@2.jpg 2x
+                    " media="(min-width: 1200px)" />
+                  <source srcset="
+                      ./images/portfolio/new_orlean-tablet.jpg 1x,
+                      ./images/portfolio/new_orlean-tablet@2.jpg 2x
+                    " media="(min-width: 768px)" />
+                  <source srcset="
+                      ./images/portfolio/new_orlean-mobile.jpg 1x,
+                      ./images/portfolio/new_orlean-mobile@2.jpg 2x
+                    " media="(min-width: 480px)" />
+                  <img src="./images/portfolio/new_orlean-desktop.jpg"
+                    alt="Изображение постера игры команд New Orlean и Golden Star" width="370" height="294"
+                    class="portfolio__img" />
+                </picture>
+
+                <div class="portfolio__example-overlay is-hidden">
+                  <p class="portfolio__example-overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio__example-text">
+                <h3 class="portfolio__example-name section-header">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="portfolio__example-description section-description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__example">
+            <a class="link portfolio__link" href="">
+              <div class="portfolio__example-overlay-wrap">
+                <picture>
+                  <source srcset="
+                      ./images/portfolio/seafood-desktop.jpg 1x,
+                      ./images/portfolio/seafood-desktop@2.jpg 2x
+                    " media="(min-width: 1200px)" />
+                  <source srcset="
+                      ./images/portfolio/seafood-tablet.jpg   1x,
+                      ./images/portfolio/seafood-tablet@2.jpg 2x
+                    " media="(min-width: 768px)" />
+                  <source srcset="
+                      ./images/portfolio/seafood-mobile.jpg  1x,
+                      ./images/portfolio/seafood-mobile@2.jpg 2x
+                    " media="(min-width: 480px)" />
+                  <img src="./images/portfolio/seafood-desktop.jpg" alt="Иконка приложения ресторана Seafood"
+                    width="370" height="294" class="portfolio__img" />
+                </picture>
+
+
+                <div class="portfolio__example-overlay is-hidden">
+                  <p class="portfolio__example-overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio__example-text">
+                <h3 class="portfolio__example-name section-header">Ресторан Seafood</h3>
+                <p class="portfolio__example-description section-description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__example">
+            <a class="link portfolio__link" href="">
+              <div class="portfolio__example-overlay-wrap">
+                <picture>
+                  <source srcset="
+                      ./images/portfolio/prime-desktop.jpg 1x,
+                      ./images/portfolio/prime-desktop@2.jpg 2x
+                    " media="(min-width: 1200px)" />
+                  <source srcset="
+                      ./images/portfolio/prime-tablet.jpg   1x,
+                      ./images/portfolio/prime-tablet@2.jpg 2x
+                    " media="(min-width: 768px)" />
+                  <source srcset="
+                      ./images/portfolio/prime-mobile.jpg   1x,
+                      ./images/portfolio/prime-mobile@2.jpg 2x
+                    " media="(min-width: 480px)" />
+                  <img src="./images/portfolio/prime-desktop.jpg" alt="Наушники" width="370" height="294"
+                    class="portfolio__img" />
+                </picture>
+
+                <div class="portfolio__example-overlay is-hidden">
+                  <p class="portfolio__example-overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio__example-text">
+                <h3 class="portfolio__example-name section-header">Проект Prime</h3>
+                <p class="portfolio__example-description section-description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__example">
+            <a class="link portfolio__link" href="">
+              <div class="portfolio__example-overlay-wrap">
+                <picture>
+                  <source srcset="
+                      ./images/portfolio/boxes-desktop.jpg 1x,
+                      ./images/portfolio/boxes-desktop@2.jpg 2x
+                    " media="(min-width: 1200px)" />
+                  <source srcset="
+                      ./images/portfolio/boxes-tablet.jpg 1x,
+                      ./images/portfolio/boxes-tablet@2.jpg 2x
+                    " media="(min-width: 768px)" />
+                  <source srcset="
+                      ./images/portfolio/boxes-mobile.jpg 1x,
+                      ./images/portfolio/boxes-mobile@2.jpg 2x
+                    " media="(min-width: 480px)" />
+                  <img src="./images/portfolio/boxes-desktop.jpg" alt="2 коробочки" width="370" height="294"
+                    class="portfolio__img" />
+                </picture>
+
+                <div class="portfolio__example-overlay is-hidden">
+                  <p class="portfolio__example-overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio__example-text">
+                <h3 class="portfolio__example-name section-header">Проект Boxes</h3>
+                <p class="portfolio__example-description section-description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__example">
+            <a class="link portfolio__link" href="">
+              <div class="portfolio__example-overlay-wrap">
+                <picture>
+                  <source srcset="
+                      ./images/portfolio/inspiration-desktop.jpg 1x,
+                      ./images/portfolio/inspiration-desktop@2.jpg 2x
+                    " media="(min-width: 1200px)" />
+                  <source srcset="
+                      ./images/portfolio/inspiration-tablet.jpg 1x,
+                      ./images/portfolio/inspiration-tablet@2.jpg 2x
+                    " media="(min-width: 768px)" />
+                  <source srcset="
+                      ./images/portfolio/inspiration-mobile.jpg 1x,
+                      ./images/portfolio/inspiration-mobile@2.jpg 2x
+                    " media="(min-width: 480px)" />
+                  <img src="./images/portfolio/inspiration-desktop.jpg"
+                    alt="Веб-сайт компании Inspiration has no Borders" width="370" height="294"
+                    class="portfolio__img" />
+                </picture>
+
+                <div class="portfolio__example-overlay is-hidden">
+                  <p class="portfolio__example-overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio__example-text">
+                <h3 class="portfolio__example-name section-header">Inspiration has no Borders</h3>
+                <p class="portfolio__example-description section-description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__example">
+            <a class="link portfolio__link" href="">
+              <div class="portfolio__example-overlay-wrap">
+                <picture>
+                  <source srcset="
+                      ./images/portfolio/limited_edition-desktop.jpg 1x,
+                      ./images/portfolio/limited_edition-desktop@2.jpg 2x
+                    " media="(min-width: 1200px)" />
+                  <source srcset="
+                      ./images/portfolio/limited_edition-tablet.jpg 1x,
+                      ./images/portfolio/limited_edition-tablet@2.jpg 2x
+                    " media="(min-width: 768px)" />
+                  <source srcset="
+                      ./images/portfolio/limited_edition-mobile.jpg 1x,
+                      ./images/portfolio/limited_edition-mobile@2.jpg 2x
+                    " media="(min-width: 480px)" />
+                  <img src="./images/portfolio/limited_edition-desktop.jpg" alt="Журнал в развернутом виде" width="370"
+                    height="294" class="portfolio__img" />
+                </picture>
+
+                <div class="portfolio__example-overlay is-hidden">
+                  <p class="portfolio__example-overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio__example-text">
+                <h3 class="portfolio__example-name section-header">Издание Limited Edition</h3>
+                <p class="portfolio__example-description section-description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__example">
+            <a class="link portfolio__link" href="">
+              <div class="portfolio__example-overlay-wrap">
+                <picture>
+                  <source srcset="
+                      ./images/portfolio/lab-desktop.jpg 1x,
+                      ./images/portfolio/lab-desktop@2.jpg 2x
+                    " media="(min-width: 1200px)" />
+                  <source srcset="
+                      ./images/portfolio/lab-tablet.jpg 1x,
+                      ./images/portfolio/lab-tablet@2.jpg 2x
+                    " media="(min-width: 768px)" />
+                  <source srcset="
+                      ./images/portfolio/lab-mobile.jpg 1x,
+                      ./images/portfolio/lab-mobile@2.jpg 2x
+                    " media="(min-width: 480px)" />
+                  <img src="./images/portfolio/lab-desktop.jpg" alt="Стильная этикетка" width="370" height="294"
+                    class="portfolio__img" />
+                </picture>
+
+                <div class="portfolio__example-overlay is-hidden">
+                  <p class="portfolio__example-overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio__example-text">
+                <h3 class="portfolio__example-name section-header">Проект LAB</h3>
+                <p class="portfolio__example-description section-description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio__example">
+            <a class="link portfolio__link" href="">
+              <div class="portfolio__example-overlay-wrap">
+                <picture>
+                  <source srcset="
+                      ./images/portfolio/growing_business-desktop.jpg 1x,
+                      ./images/portfolio/growing_business-desktop@2.jpg 2x
+                    " media="(min-width: 1200px)" />
+                  <source srcset="
+                      ./images/portfolio/growing_business-tablet.jpg 1x,
+                      ./images/portfolio/growing_business-tablet@2.jpg 2x
+                    " media="(min-width: 768px)" />
+                  <source srcset="
+                      ./images/portfolio/growing_business-mobile.jpg 1x,
+                      ./images/portfolio/growing_business-mobile@2.jpg 2x
+                    " media="(min-width: 480px)" />
+                  <img src="./images/portfolio/growing_business-desktop.jpg"
+                    alt="Ноутбук с приложением Growing Business" width="370" height="294" class="portfolio__img" />
+                </picture>
+
+                <div class="portfolio__example-overlay is-hidden">
+                  <p class="portfolio__example-overlay-text"></p>
+                </div>
+              </div>
+              <div class="portfolio__example-text">
+                <h3 class="portfolio__example-name section-header">Growing Business</h3>
+                <p class="portfolio__example-description section-description">Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!--подвал-->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__contacts">
+        <a href="index.html" class="logo link logo__bot">Web<span class="logo__half-bot">Studio</span></a>
+        <address class="footer__contacts-list" id="3">
+          <ul class="contacts-bot list">
+            <li class="contacts-bot__item">
+              <a class="contacts-bot__link link address contacts-bot__map" href="https://goo.gl/maps/tf9V9uD1shakLC2a6"
+                target="_blank" rel="nooppener noreferal">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="contacts-bot__item">
+              <a class="contacts-bot__link link address" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="contacts-bot__item">
+              <a class="contacts-bot__link link address" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div>
+        <h2 class="footer__socials-header">присоединяйтесь</h2>
+        <ul class="list socials">
+          <li class="socials__item">
+            <a class="social__link social__link-footer link" href="">
+              <svg class="social__icon-bot" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg><span class="visually-hidden">Instagram</span></a>
+          </li>
+          <li class="socials__item">
+            <a class="social__link social__link-footer link" href="">
+              <svg class="social__icon-bot" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg><span class="visually-hidden">Twitter</span></a>
+          </li>
+          <li class="socials__item">
+            <a class="social__link social__link-footer link" href="">
+              <svg class="social__icon-bot" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="socials__item">
+            <a class="social__link social__link-footer link" href="">
+              <svg class="social__icon-bot" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg><span class="visually-hidden">LinkedIn</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__subscribe">
+        <h2 class="footer__socials-header">Подпишитесь на рассылку</h2>
+        <form class="subscribe">
+          <input class="subscribe__input" type="email" name="user-mail-subscribe" required placeholder="E-mail" />
+          <button class="subscribe__btn" type="submit">
+            Подписаться<svg class="subscribe__icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

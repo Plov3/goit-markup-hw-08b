@@ -1,0 +1,45 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+.logo__half-top {
+  color: var(--secondary-color);
+}
+.logo__bot {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.logo__half-bot {
+  color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .logo__top {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo__top {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo__top {
+    margin-right: 93px;
+  }
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  .logo__bot {
+    text-align: left;
+  }
+}
+
